@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PodcastSearchController: UITableViewController {
+class PodcastSearchController: UITableViewController, UISearchBarDelegate {
     
     let podcasts = [
         Podcast(name: "1", artistName: "1"),
@@ -25,6 +25,7 @@ class PodcastSearchController: UITableViewController {
         
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
+        searchController.searchBar.delegate = self
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
     }
@@ -42,6 +43,11 @@ class PodcastSearchController: UITableViewController {
         cell.imageView?.image = UIImage(named: "appicon")
         
         return cell
+    }
+    
+    //TODO: Implement Api Request On Text Change
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
     }
     
 }
