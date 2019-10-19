@@ -1,5 +1,5 @@
 //
-//  Podcast.swift
+//  SearchResults.swift
 //  Apple Podcast Clone
 //
 //  Created by Awesome Mac on 19/10/2019.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Podcast: Decodable {
-    let trackName: String
-    let artistName: String
+struct SearchResults: Decodable {
+    let resultCount: Int
+    let results: [Podcast]
 }
