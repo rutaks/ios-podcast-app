@@ -11,9 +11,7 @@ import Alamofire
 
 class PodcastSearchController: UITableViewController, UISearchBarDelegate {
     
-    
-    
-    let podcasts = [
+    var podcasts = [
         Podcast(trackName: "1", artistName: "1"),
         Podcast(trackName: "1", artistName: "1"),
         Podcast(trackName: "1", artistName: "1")
@@ -52,7 +50,7 @@ class PodcastSearchController: UITableViewController, UISearchBarDelegate {
         let podcast = podcasts[indexPath.row]
         
         cell.textLabel?.numberOfLines = -1
-        cell.textLabel?.text = "\(podcast.trackName)\n\(podcast.artistName)"
+        cell.textLabel?.text = "\(podcast.trackName ?? "")\n\(podcast.artistName ?? "" )"
         cell.imageView?.image = UIImage(named: "appicon")
         
         return cell
@@ -61,20 +59,10 @@ class PodcastSearchController: UITableViewController, UISearchBarDelegate {
     //MARK:-API Search Implementation
     //TODO: Implement Api Request On Text Change
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        let URL = "https://itunes.apple.com/search?term=\(searchText)"
-        
-        AF.request(URL).responseData { (resp) in
-            if let err = resp.error {
-                print("Failure")
-                return
-            }
-            
-            guard let data = resp.data else { return }
-            let du = String(data: data, encoding: .utf8)
-            print(du ?? "")
+        APIService.shared.fetchPodcasts(searchText: searchText) { (podcasts) in
+            self.podcasts = podcasts
+            self.tableView.reloadData()
         }
-        
-        print(searchText)
     }
     
 }
