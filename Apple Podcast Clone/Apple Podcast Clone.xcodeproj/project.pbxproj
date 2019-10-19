@@ -13,6 +13,8 @@
 		024D605523597B7C00BF61CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D605223597B7B00BF61CA /* ViewController.swift */; };
 		024D605623597B7C00BF61CA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D605323597B7C00BF61CA /* MainTabBarController.swift */; };
 		024D605723597B7C00BF61CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D605423597B7C00BF61CA /* AppDelegate.swift */; };
+		02F4AB81235ACEE3007838BF /* PodcastSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F4AB80235ACEE3007838BF /* PodcastSearchController.swift */; };
+		02F4AB84235AD017007838BF /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F4AB83235AD017007838BF /* Podcast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		024D605223597B7B00BF61CA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		024D605323597B7C00BF61CA /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		024D605423597B7C00BF61CA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02F4AB80235ACEE3007838BF /* PodcastSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastSearchController.swift; sourceTree = "<group>"; };
+		02F4AB83235AD017007838BF /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		024D603B23587C2500BF61CA /* Apple Podcast Clone */ = {
 			isa = PBXGroup;
 			children = (
+				02F4AB82235AD00A007838BF /* Models */,
+				02F4AB7F235ACEC8007838BF /* Controllers */,
 				024D605423597B7C00BF61CA /* AppDelegate.swift */,
 				024D605223597B7B00BF61CA /* ViewController.swift */,
 				024D605323597B7C00BF61CA /* MainTabBarController.swift */,
@@ -65,6 +71,22 @@
 				024D604A23587C2700BF61CA /* Info.plist */,
 			);
 			path = "Apple Podcast Clone";
+			sourceTree = "<group>";
+		};
+		02F4AB7F235ACEC8007838BF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				02F4AB80235ACEE3007838BF /* PodcastSearchController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		02F4AB82235AD00A007838BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02F4AB83235AD017007838BF /* Podcast.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F4AB81235ACEE3007838BF /* PodcastSearchController.swift in Sources */,
 				024D605723597B7C00BF61CA /* AppDelegate.swift in Sources */,
 				024D605623597B7C00BF61CA /* MainTabBarController.swift in Sources */,
 				024D605523597B7C00BF61CA /* ViewController.swift in Sources */,
+				02F4AB84235AD017007838BF /* Podcast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
