@@ -18,8 +18,14 @@ class PodcastSearchController: UITableViewController {
     
     let cellId = "cellId"
     
+    let searchController = UISearchController(searchResultsController: nil)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
     }
     
