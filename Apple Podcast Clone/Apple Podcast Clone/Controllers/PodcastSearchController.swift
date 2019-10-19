@@ -22,13 +22,23 @@ class PodcastSearchController: UITableViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupSearchBar()
+        setupTableView()
+    }
+    
+    //MARK:-View Setups
+    
+    fileprivate func setupSearchBar() {
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
         searchController.searchBar.delegate = self
-        
+    }
+    
+    fileprivate func setupTableView() {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
     }
+    
+    //MARK:-Table View Setup
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return podcasts.count
@@ -45,6 +55,7 @@ class PodcastSearchController: UITableViewController, UISearchBarDelegate {
         return cell
     }
     
+    //MARK:-API Search Implementation
     //TODO: Implement Api Request On Text Change
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print(searchText)
