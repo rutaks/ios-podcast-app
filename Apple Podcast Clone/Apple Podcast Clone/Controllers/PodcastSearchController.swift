@@ -30,8 +30,11 @@ class PodcastSearchController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
         let podcast = podcasts[indexPath.row]
+        
         cell.textLabel?.numberOfLines = -1
         cell.textLabel?.text = "\(podcast.name)\n\(podcast.artistName)"
+        cell.imageView?.image = UIImage(named: "appicon")
+        
         return cell
     }
     
