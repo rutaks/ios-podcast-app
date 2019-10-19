@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		024D603D23587C2500BF61CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D603C23587C2500BF61CA /* AppDelegate.swift */; };
-		024D603F23587C2500BF61CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D603E23587C2500BF61CA /* SceneDelegate.swift */; };
-		024D604123587C2500BF61CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D604023587C2500BF61CA /* ViewController.swift */; };
 		024D604423587C2500BF61CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024D604223587C2500BF61CA /* Main.storyboard */; };
 		024D604623587C2700BF61CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024D604523587C2700BF61CA /* Assets.xcassets */; };
 		024D604923587C2700BF61CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024D604723587C2700BF61CA /* LaunchScreen.storyboard */; };
+		024D605523597B7C00BF61CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D605223597B7B00BF61CA /* ViewController.swift */; };
+		024D605623597B7C00BF61CA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D605323597B7C00BF61CA /* MainTabBarController.swift */; };
+		024D605723597B7C00BF61CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024D605423597B7C00BF61CA /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		024D603923587C2500BF61CA /* Apple Podcast Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Podcast Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		024D603C23587C2500BF61CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		024D603E23587C2500BF61CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		024D604023587C2500BF61CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		024D604323587C2500BF61CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		024D604523587C2700BF61CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		024D604823587C2700BF61CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		024D604A23587C2700BF61CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024D605223597B7B00BF61CA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		024D605323597B7C00BF61CA /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		024D605423597B7C00BF61CA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +56,9 @@
 		024D603B23587C2500BF61CA /* Apple Podcast Clone */ = {
 			isa = PBXGroup;
 			children = (
-				024D603C23587C2500BF61CA /* AppDelegate.swift */,
-				024D603E23587C2500BF61CA /* SceneDelegate.swift */,
-				024D604023587C2500BF61CA /* ViewController.swift */,
+				024D605423597B7C00BF61CA /* AppDelegate.swift */,
+				024D605223597B7B00BF61CA /* ViewController.swift */,
+				024D605323597B7C00BF61CA /* MainTabBarController.swift */,
 				024D604223587C2500BF61CA /* Main.storyboard */,
 				024D604523587C2700BF61CA /* Assets.xcassets */,
 				024D604723587C2700BF61CA /* LaunchScreen.storyboard */,
@@ -138,9 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				024D604123587C2500BF61CA /* ViewController.swift in Sources */,
-				024D603D23587C2500BF61CA /* AppDelegate.swift in Sources */,
-				024D603F23587C2500BF61CA /* SceneDelegate.swift in Sources */,
+				024D605723597B7C00BF61CA /* AppDelegate.swift in Sources */,
+				024D605623597B7C00BF61CA /* MainTabBarController.swift in Sources */,
+				024D605523597B7C00BF61CA /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,6 +287,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78L7HJ7V3H;
 				INFOPLIST_FILE = "Apple Podcast Clone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78L7HJ7V3H;
 				INFOPLIST_FILE = "Apple Podcast Clone/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
