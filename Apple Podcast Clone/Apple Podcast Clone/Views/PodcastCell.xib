@@ -25,35 +25,36 @@
                             <constraint firstAttribute="height" constant="112.5" id="YCF-M2-3mF"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM0-5q-6ds">
-                        <rect key="frame" x="120.5" y="8" width="111" height="19.5"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x10-JN-82S">
-                        <rect key="frame" x="120.5" y="35.5" width="91" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpI-FT-Mjw">
-                        <rect key="frame" x="120.5" y="88.5" width="112" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="rbs-TG-NiS">
+                        <rect key="frame" x="120.5" y="18" width="396.5" height="92.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MM0-5q-6ds">
+                                <rect key="frame" x="0.0" y="0.0" width="396.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x10-JN-82S">
+                                <rect key="frame" x="0.0" y="35.5" width="396.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpI-FT-Mjw">
+                                <rect key="frame" x="0.0" y="72" width="396.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="MM0-5q-6ds" firstAttribute="top" secondItem="Buf-kb-6Cu" secondAttribute="top" constant="8" id="5Bd-RH-cC6"/>
                     <constraint firstItem="Ix2-0f-jGh" firstAttribute="top" secondItem="Buf-kb-6Cu" secondAttribute="top" constant="8" id="6s6-hD-aJj"/>
-                    <constraint firstItem="x10-JN-82S" firstAttribute="top" secondItem="MM0-5q-6ds" secondAttribute="bottom" constant="8" id="Eez-L8-tNq"/>
-                    <constraint firstItem="MM0-5q-6ds" firstAttribute="leading" secondItem="Ix2-0f-jGh" secondAttribute="trailing" constant="8" id="KUi-m3-tFw"/>
-                    <constraint firstItem="wpI-FT-Mjw" firstAttribute="leading" secondItem="Ix2-0f-jGh" secondAttribute="trailing" constant="8" id="LSo-LW-l7x"/>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MM0-5q-6ds" secondAttribute="trailing" constant="8" id="WLy-RN-qtz"/>
+                    <constraint firstItem="rbs-TG-NiS" firstAttribute="leading" secondItem="Ix2-0f-jGh" secondAttribute="trailing" constant="8" id="f3g-Aq-9Xr"/>
+                    <constraint firstAttribute="trailing" secondItem="rbs-TG-NiS" secondAttribute="trailing" constant="8" id="gGc-c2-J88"/>
                     <constraint firstItem="Ix2-0f-jGh" firstAttribute="leading" secondItem="Buf-kb-6Cu" secondAttribute="leading" id="gGs-Hv-fzh"/>
-                    <constraint firstItem="wpI-FT-Mjw" firstAttribute="top" secondItem="x10-JN-82S" secondAttribute="bottom" constant="32" id="kTw-2E-pv9"/>
-                    <constraint firstItem="x10-JN-82S" firstAttribute="leading" secondItem="Ix2-0f-jGh" secondAttribute="trailing" constant="8" id="vVK-sx-z1q"/>
+                    <constraint firstItem="rbs-TG-NiS" firstAttribute="top" secondItem="Buf-kb-6Cu" secondAttribute="top" constant="18" id="yut-Np-qSr"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

@@ -20,6 +20,7 @@ class PodcastCell: UITableViewCell {
         didSet {
             trackNameLabel.text = podcast.trackName
             artistName.text = podcast.artistName
-        }
+            episodeCountLabel.text = "\(podcast.trackCount ?? 0) Episodes"
+        } 
     }
 }
