@@ -69,4 +69,8 @@ class PodcastSearchController: UITableViewController, UISearchBarDelegate {
         }
     }
     
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        SVProgressHUD.dismiss()
+    }
+    
 }
