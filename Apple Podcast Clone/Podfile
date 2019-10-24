@@ -8,5 +8,6 @@ target 'Apple Podcast Clone' do
   # Pods for Apple Podcast Clone
   ## Alamofire For Easy HTTP Requests
   pod 'Alamofire', '~> 5.0.0-rc.2'
+  pod 'SVProgressHUD'
 
 end

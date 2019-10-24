@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SVProgressHUD
 
 class PodcastSearchController: UITableViewController, UISearchBarDelegate {
     
@@ -47,11 +48,6 @@ class PodcastSearchController: UITableViewController, UISearchBarDelegate {
         let podcast = podcasts[indexPath.row]
         cell.podcast = podcast
         
-//
-//        cell.textLabel?.numberOfLines = -1
-//        cell.textLabel?.text = "\(podcast.trackName ?? "")\n\(podcast.artistName ?? "" )"
-//        cell.imageView?.image = UIImage(named: "appicon")
-        
         return cell
     }
     
@@ -63,9 +59,13 @@ class PodcastSearchController: UITableViewController, UISearchBarDelegate {
     //MARK:-API Search Implementation
     //TODO: Implement Api Request On Text Change
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.count != 0 {
+            SVProgressHUD.show()
+        }
         APIService.shared.fetchPodcasts(searchText: searchText) { (podcasts) in
             self.podcasts = podcasts
             self.tableView.reloadData()
+            SVProgressHUD.dismiss()
         }
     }
     
